@@ -38,24 +38,6 @@ $app->get('/selectUser/{id}', function (Request $request, Response $response) {
     return $response;
 });
 
-//$app->get('/insertUser/{id}&{name}&{email}&{age}', function (Request $request, Response $response) {
-//    $database = new Medoo([
-//        'database_type' => 'sqlite',
-//        'database_file' => 'vendor/sqlite/trainingDB.db'
-//    ]);
-//    $id = $request->getArgument('id');
-//    $name = $request->getArgument('name');
-//    $email = $request->getArgument('email');
-//    $age = $request->getArgument('age');
-//
-//    $database->insert('USER',
-//        [
-//            'id'=>$id,
-//            'name'=>$name,
-//            'email'=>$email,
-//            'age'=>$age
-//        ]);
-//});
 //$app->post('/hello', function (Request $request, Response $response) {
 //    $data = $request->getParsedBody();
 //    $database = new Medoo([
